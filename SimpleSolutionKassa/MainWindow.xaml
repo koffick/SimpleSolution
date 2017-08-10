@@ -1,0 +1,27 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" x:Class="SimpleSolutionKassa.MainWindow"
+        Title="Прием платежей ООО 'Простые решения'" Height="550" Width="567"
+        Loaded="Window_Loaded"
+        Closed="Window_Closed"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto">
+            </RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="Операции" Name="OperationItem">
+            </MenuItem>
+            <MenuItem Header="Отчеты">
+            </MenuItem>
+            <MenuItem Header="Настройка" Name="SettingItem">
+            </MenuItem>
+        </Menu>
+        <Frame Grid.Row="1" Name="DataFrame" NavigationUIVisibility="Hidden">
+            
+        </Frame>
+    </Grid>
+</Window>

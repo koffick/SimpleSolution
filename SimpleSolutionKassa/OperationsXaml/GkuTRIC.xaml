@@ -1,0 +1,33 @@
+﻿<Page x:Class="SimpleSolutionKassa.OperationsXaml.GkuTRIC"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+	Title="GkuTRIC" d:DesignWidth="553" d:DesignHeight="407" Unloaded="Page_Unloaded">
+
+    <Grid>
+        <TextBox Height="32" HorizontalAlignment="Left" Margin="40,23,0,0" x:Name="inputCode" VerticalAlignment="Top" Width="305" KeyDown="inputCode_KeyDown"/>
+        <Label Content="Адрес:" Height="28" HorizontalAlignment="Left" x:Name="labelAddress" VerticalAlignment="Top" Margin="43,69,0,0" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="97,69,0,0" x:Name="address" Text="" VerticalAlignment="Top" Width="384" Foreground="Black" Background="#FFDEDEDE" ClipToBounds="False" />
+        <Label Content="Фамилия:" Height="28" HorizontalAlignment="Left" x:Name="labelFamily" VerticalAlignment="Top" Margin="40,97,0,0" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="191,97,0,0" x:Name="family" Text="" VerticalAlignment="Top" Width="259" Foreground="Black" Background="#FFDEDEDE" ClipToBounds="False" />
+        <Label Content="Примечание:" Height="28" HorizontalAlignment="Left" x:Name="labelNote" VerticalAlignment="Top" Margin="40,125,0,0" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="191,125,0,0" x:Name="note" Text="" VerticalAlignment="Top" Width="259" Foreground="Black" Background="#FFDEDEDE" ClipToBounds="False" />
+        <Label Content="Штрих-код квитанции:" Height="28" HorizontalAlignment="Left" Margin="40,153,0,0" x:Name="label1_Copy" VerticalAlignment="Top" />
+        <Label Content="Лицевой счет:" Height="28" HorizontalAlignment="Left" Margin="40,181,0,0" x:Name="labelLschet" VerticalAlignment="Top" />
+        <Label Content="Сумма:" Height="28" HorizontalAlignment="Left" Margin="40,209,0,0" x:Name="label2_Copy7" VerticalAlignment="Top" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="191,153,0,0" x:Name="barCode" Text="" VerticalAlignment="Top" Width="259" Foreground="Black" Background="#FFDEDEDE" ClipToBounds="False"/>
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="191,181,0,0" x:Name="lschet" Text="" VerticalAlignment="Top" Width="259" Foreground="Black" Background="#FFDEDEDE" ClipToBounds="False" />
+        <TextBox Background="#FFDEDEDE" Foreground="Black" Height="23" HorizontalAlignment="Left" Margin="191,209,0,0" x:Name="summa" Text="" VerticalAlignment="Top" Width="259" IsReadOnly="True" BorderThickness="0" TextChanged="summa_TextChanged"/>
+        <Button Content="Другая сумма" Height="33" HorizontalAlignment="Left" Margin="350,23,0,0" x:Name="btnChangeSumm" VerticalAlignment="Top" Width="131" FontSize="15" IsEnabled="False" Click="btnChangeSumm_Click" />
+        <Button Content="Печать чека" Height="38" HorizontalAlignment="Left" Margin="162,341,0,0" x:Name="btnPrintTicket" VerticalAlignment="Top" Width="215" FontSize="20" IsEnabled="False"  />
+        <Label Content="Сумма с клиента:" Height="28" HorizontalAlignment="Left" Margin="40,266,0,0" x:Name="label2_Copy8" VerticalAlignment="Top" />
+        <TextBox Background="#FFDEDEDE" Foreground="Black" Height="23" HorizontalAlignment="Left" Margin="191,266,0,0" x:Name="summaTotal" Text="" VerticalAlignment="Top" Width="259" TextAlignment="Right" IsReadOnly="True" BorderThickness="0" TextChanged="summaTotal_TextChanged" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="191,295,0,0" x:Name="ticketid" Text="" VerticalAlignment="Top" Width="259" Foreground="Black" Background="#FFDEDEDE" ClipToBounds="False" IsReadOnly="True" TextChanged="ticketid_TextChanged" BorderThickness="0"/>
+        <Label Content="Сумма комиссии" Height="28" HorizontalAlignment="Left" Margin="40,237,0,0" x:Name="label2_Copy" VerticalAlignment="Top" />
+        <TextBlock Background="#FFDEDEDE" Foreground="Black" Height="23" HorizontalAlignment="Left" Margin="191,237,0,0" x:Name="summaCommission" Text="" VerticalAlignment="Top" Width="259" IsEnabled="False" />
+        <TextBox Height="32" HorizontalAlignment="Left" Margin="350,23,0,0" x:Name="otherSumma" VerticalAlignment="Top" Width="131" Visibility="Hidden" KeyDown="otherSumma_KeyDown" />
+
+    </Grid>
+</Page>
