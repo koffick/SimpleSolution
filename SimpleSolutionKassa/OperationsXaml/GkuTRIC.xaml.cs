@@ -63,11 +63,6 @@ namespace SimpleSolutionKassa.OperationsXaml
             }
         }
 
-        private string TextSearch(string[] array, string key)
-        {
-            return array.Where(w => w.Contains(key)).FirstOrDefault();
-        }
-
         private void inputCode_KeyDown(object sender, KeyEventArgs e)
         {
             if (InputCodeMask.OnlyDigital(ref e))
